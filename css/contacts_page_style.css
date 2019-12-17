@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/bg2.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content__burger {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 3%;
+  left: 12%;
+}
+
+.content__main_title {
+  position: absolute;
+  width: 100%;
+  padding-top: 3%;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Didact Gothic;
+  font-weight: 100;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.content__block {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+  height: 50%;
+}
+
+.content__map {
+  width: 55%;
+  height: 100%;
+}
+
+.content__title {
+  width: 45%;
+  height: 100%;
+  background-color: #2b323b;
+}
+
+.burger__menu {
+  position: absolute;
+  width: 11%;
+  border-left: 1px solid grey;
+  bottom: 15%;
+  left: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.content__menu_items {
+  padding-top: 10%;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: Didact Gothic;
+  font-size: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=contacts_page_style.css.map */

@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+  }
+
+  .content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    height: 100vh;
+    &__burger {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 3%;
+        left: 12%;
+      }
+      &__main_title {
+        position: absolute;
+        width: 100%;
+        padding-top: 4%;
+        margin: 0;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: Didact Gothic;
+        font-weight: 100;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+      }
+      &__price{
+          width: 60%;
+          height: 35%;
+         position: absolute;
+         margin: auto;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+      &__row{
+          width: 100%;
+          height: 14.3%;
+          display:flex;
+      }
+      &__name{
+        width: 45%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 50px;
+        color: seashell;
+      }
+      &__name_price{
+          text-align: end;
+          width: 55%;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 26px;
+          line-height: 50px;
+          color: seashell;
+          border-bottom: 1.3px solid white;
+      }
+      &__button {
+        position: absolute;
+        margin: auto;
+        top: 500px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 1px solid white;
+        border-radius: 50px;
+        outline: none;
+        width: 210px;
+        height: 50px;
+        background-color: transparent;
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        color: white;
+      }
+      @media screen and(max-width: 1400px) {
+        &__price{
+            width: 60%;
+            height: 45%;
+           position: absolute;
+           margin: auto;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+        }
+        &__row{
+            width: 100%;
+            height: 14.3%;
+            display:flex;
+        }
+        &__name_price{
+            text-align: end;
+            width: 55%;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 50px;
+            color: seashell;
+            border-bottom: 1.3px solid white;
+        }
+        }
+}
+
+.burger__menu {
+    position: absolute;
+    width: 11%;
+    border-left: 1px solid grey;
+    bottom: 15%;
+    left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+    display: none;
+  }
+  .content__menu_items {
+    padding-top: 10%;
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Didact Gothic;
+    font-size: 20px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .content__button:hover{
+    background-color: white;
+    color: black;
+}
