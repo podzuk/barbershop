@@ -43,22 +43,45 @@ $(".content__team").slick({
 
   function popup_burbers() {
     $('.content__width').addClass('show') 
-    //$('.main').addClass('blur') 
+    $('.content__menu').addClass('blur') 
+    $('.content__line').addClass('blur') 
+    $('.content__footer').addClass('blur') 
+    $('.content__facebook').addClass('blur') 
+    $('.content__instagram').addClass('blur') 
+    $('.content__burger').addClass('blur') 
+    $('.content__instagram').addClass('blur') 
+    $('.content__instagram').addClass('blur') 
   }
   function closePopup_burbers() {
     $('.content__width').removeClass('show') 
+    $('.content__menu').removeClass('blur') 
+    $('.content__line').removeClass('blur') 
+    $('.content__footer').removeClass('blur') 
+    $('.content__facebook').removeClass('blur') 
+    $('.content__instagram').removeClass('blur') 
   }
+  
   function popup_enter(){
     $('.content__width').removeClass('show')
     $('.content__data').addClass('show') 
   }
   function close_data() {
     $('.content__data').removeClass('show') 
+    $('.content__menu').removeClass('blur') 
+    $('.content__line').removeClass('blur') 
+    $('.content__footer').removeClass('blur') 
+    $('.content__facebook').removeClass('blur') 
+    $('.content__instagram').removeClass('blur') 
   }
   function close_popup() {
     $('.content__data').removeClass('show') 
     $('.content__width').removeClass('show')
     $('.content__popup').removeClass('show')
+    $('.content__menu').removeClass('blur') 
+    $('.content__line').removeClass('blur') 
+    $('.content__footer').removeClass('blur') 
+    $('.content__facebook').removeClass('blur') 
+    $('.content__instagram').removeClass('blur') 
   }
   function popup_pidtv() {
     $('.content__data').removeClass('show') 

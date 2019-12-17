@@ -45,8 +45,27 @@
                 <div class="content__name">Камуфляж сивини</div>
                 <div class="content__name_price">250 грн</div>
             </div>
-           <button class="content__button">Записатись</button> 
+           <button onclick="popup_burbers()" class="content__button">Записатись</button> 
         </div>
+
+        <div class="content__width">
+            <h1 class="content__MainTitle">Оберіть барбера <img onclick="closePopup_burbers()" class="content__close" src="images/close.svg" alt=""></h1>
+            <div class="content__team">
+                <div class="content__andrii">
+                    <img onclick="popup_enter()" class="content__foto" src="../images/andrii.jpg" alt="">
+                    <h2 class="content__name_foto">Андрій</h2>
+                </div>
+                <div onclick="popup_enter()" class="content__tania">
+                    <img class="content__foto" src="../images/tania.jpg" alt="">
+                    <h2 class="content__name_foto">Таня</h2>
+                </div>
+                <div onclick="popup_enter()" class="content__ivan" class="content__foto">
+                    <img class="content__foto"  src="../images/ivan.jpg" alt="">
+                    <h2 class="content__name_foto">Іван</h2>  
+                </div>
+            </div>
+        </div>
+
 </div>
     <div id="menu" class="burger__menu">
         <a href="../index.html"><div class="content__menu_items">головна</div></a>

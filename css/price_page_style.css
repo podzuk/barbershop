@@ -131,6 +131,71 @@ body {
   }
 }
 
+.content__width {
+  position: absolute;
+  margin: auto;
+  top: 19%;
+  left: 0;
+  right: 0;
+  width: 75%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  background-color: #333943;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.content__close {
+  position: absolute;
+  right: 0;
+  top: -0.7%;
+}
+
+.content__foto {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 170px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content__team {
+  margin-bottom: 6%;
+}
+
+.content__MainTitle {
+  width: 100%;
+  padding-top: 1%;
+  text-align: center;
+  font-family: Didact Gothic;
+  font-weight: 100;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.content__name_foto {
+  width: 100%;
+  text-align: center;
+  font-family: Didact Gothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 1400px) {
+  .content__team {
+    margin-bottom: 2%;
+  }
+  .content__foto {
+    margin-top: 10px;
+  }
+}
+
 .burger__menu {
   position: absolute;
   width: 11%;
@@ -161,5 +226,14 @@ a {
 .content__button:hover {
   background-color: white;
   color: black;
+}
+
+.slick-active {
+  display: none;
+}
+
+.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=price_page_style.css.map */

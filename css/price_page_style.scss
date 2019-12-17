@@ -6,7 +6,6 @@ body {
     background-position-x: center;
     background-size: cover;
     background-attachment: fixed; 
-    
   }
 
   .content {
@@ -117,6 +116,64 @@ body {
             border-bottom: 1.3px solid white;
         }
         }
+        &__width{
+          position: absolute;
+          margin: auto;
+          top: 19%;
+          left: 0;
+          right: 0;
+          width: 75%; 
+          transition: 200ms ease-in-out;;
+          background-color: #333943;  
+          transform: scale(0);
+          }
+          &__close{
+            position: absolute;
+            right: 0;
+            top: -0.7%;
+        }
+        &__foto {
+          margin-top: 50px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 200px;
+          height: 200px;
+          border-radius: 170px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+  
+        &__team{
+          margin-bottom: 6%;
+      }
+      &__MainTitle{
+        width: 100%;
+        padding-top: 1%;
+        text-align: center;
+        font-family: Didact Gothic;
+        font-weight: 100;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+      }
+      &__name_foto{
+        width: 100%;
+        text-align: center;
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        color: white;
+      }
+      @media screen and(max-width: 1400px) {
+        &__team{
+            margin-bottom: 2%;
+        }
+        &__foto{
+            margin-top: 10px;
+        }
+      }
+
 }
 
 .burger__menu {
@@ -147,3 +204,10 @@ body {
     background-color: white;
     color: black;
 }
+.slick-active{
+  display: none;
+}
+.show{
+  transform: scale(1);
+}
+
