@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../images/bg2.png);
+    background-image: url(../images/wp.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
@@ -34,18 +34,32 @@ body {
         color: white;
       }
       &__slider{
-          width: 60%;
-          height: 60%;
+
+          width: 45%;
+          height: 40%;
           position: absolute;
           margin: auto;
+          top: 20%;
           bottom: 0;
           left: 0;
           right: 0;
       }
+      &__slider_foto{
+        padding-top: 25%;
+        width: 30%;
+        height: 40%;
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       
+    }
 &__slider1{
-  width: 150px;
-  height: 150px;
-    margin-top: 100px;
+  margin-left: 30px;
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
 }
 
 
@@ -61,13 +75,34 @@ body {
 .slick-track{
 
 }
-*/
+
+.slick-active{
+  display: none;
+}
+.slick-dots{
+  opacity: 0;
+}
+.slick-current{
+  width: 100px;
+}
+.slick-active{
+  width: 100px;
+}
+.slick-current{
+  width: 100px;
+}
 
 .draggable{
   padding-top: 200px;
   padding-left: 0;
 }
-
+*/
+.slick-active{
+  display: none;
+}
+.slick-dots{
+  opacity: 0;
+}
 .burger__menu {
     position: absolute;
     width: 11%;

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../images/bg2.png);
+  background-image: url(../images/wp.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
@@ -55,8 +55,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 60%;
-  height: 50%;
+  width: 75%;
+  height: 55%;
 }
 
 .content__map {
@@ -68,6 +68,61 @@ body {
   width: 45%;
   height: 100%;
   background-color: #2b323b;
+}
+
+.content__sub_title {
+  position: relative;
+  widows: 100%;
+  height: 50%;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+
+.content__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content__networks {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #2b323b;
+}
+
+.content__network {
+  position: absolute;
+  margin: auto;
+  width: 70%;
+  height: 45%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1400px) {
+  .content__network {
+    width: 80%;
+  }
+}
+
+p {
+  margin-left: 60px;
+  margin-top: -35px;
 }
 
 .burger__menu {
