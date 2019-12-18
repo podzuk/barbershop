@@ -24,7 +24,7 @@ body {
   left: 12%;
 }
 
-.content__main_title {
+.content__main_title_price {
   position: absolute;
   width: 100%;
   padding-top: 4%;
@@ -196,6 +196,187 @@ body {
   }
 }
 
+.content__data {
+  position: absolute;
+  margin: auto;
+  top: 19%;
+  left: 0;
+  right: 0;
+  width: 75%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  background-color: #333943;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.content__calendar {
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content__left {
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+
+.content__right {
+  position: relative;
+  width: 55%;
+  height: 100%;
+}
+
+.content__main_calendar {
+  position: absolute;
+  right: 30%;
+  top: 15%;
+}
+
+.content__enter {
+  height: 60%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content__time {
+  position: absolute;
+  left: 0;
+  top: 7vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: Open Sans;
+  font-style: oblique;
+}
+
+.content__phone {
+  position: absolute;
+  right: 3vw;
+  top: 7vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: Open Sans;
+  font-style: oblique;
+}
+
+.content__firstName {
+  position: absolute;
+  left: 0;
+  bottom: 7vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: Open Sans;
+  font-style: oblique;
+}
+
+.content__secondName {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: Open Sans;
+  font-style: oblique;
+  position: absolute;
+  right: 3vw;
+  bottom: 7vh;
+}
+
+.content__rightFooter {
+  position: relative;
+}
+
+.content__header_title {
+  font-family: Didact Gothic;
+  font-weight: 100;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10%;
+}
+
+.content__buttonData {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid white;
+  border-radius: 50px;
+  outline: none;
+  width: 210px;
+  height: 50px;
+  background-color: transparent;
+  font-family: Didact Gothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+
+.content__popup {
+  width: 40%;
+  height: 35%;
+  background-color: #333943;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.content__popupTitle {
+  width: 100%;
+  height: 80%;
+  margin-top: 7vh;
+  text-align: center;
+  font-family: Didact Gothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.content__radio {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 6vh;
+}
+
+@media screen and (max-width: 1400px) {
+  .content__radio {
+    bottom: 6vh;
+  }
+  .content__popup {
+    width: 45%;
+    height: 45%;
+  }
+}
+
 .burger__menu {
   position: absolute;
   width: 11%;
@@ -235,5 +416,10 @@ a {
 .show {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 /*# sourceMappingURL=price_page_style.css.map */

@@ -5,6 +5,7 @@ $(".content__team").slick({
     dots: true,
     autoplaySpeed: 2000
   });
+
   $(".popup").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -41,6 +42,7 @@ $(".content__team").slick({
         } 
   }
 
+  
   function popup_burbers() {
     $('.content__width').addClass('show') 
     $('.content__menu').addClass('blur') 
@@ -49,8 +51,8 @@ $(".content__team").slick({
     $('.content__facebook').addClass('blur') 
     $('.content__instagram').addClass('blur') 
     $('.content__burger').addClass('blur') 
-    $('.content__instagram').addClass('blur') 
-    $('.content__instagram').addClass('blur') 
+    $('.content__main_title_price').addClass('blur') 
+    $('.content__button').addClass('blur') 
   }
   function closePopup_burbers() {
     $('.content__width').removeClass('show') 
@@ -59,8 +61,10 @@ $(".content__team").slick({
     $('.content__footer').removeClass('blur') 
     $('.content__facebook').removeClass('blur') 
     $('.content__instagram').removeClass('blur') 
+    $('.content__burger').removeClass('blur') 
+    $('.content__main_title_price').removeClass('blur') 
+    $('.content__button').removeClass('blur') 
   }
-  
   function popup_enter(){
     $('.content__width').removeClass('show')
     $('.content__data').addClass('show') 
@@ -72,6 +76,9 @@ $(".content__team").slick({
     $('.content__footer').removeClass('blur') 
     $('.content__facebook').removeClass('blur') 
     $('.content__instagram').removeClass('blur') 
+    $('.content__burger').removeClass('blur') 
+    $('.content__main_title_price').removeClass('blur') 
+    $('.content__button').removeClass('blur') 
   }
   function close_popup() {
     $('.content__data').removeClass('show') 
@@ -82,9 +89,14 @@ $(".content__team").slick({
     $('.content__footer').removeClass('blur') 
     $('.content__facebook').removeClass('blur') 
     $('.content__instagram').removeClass('blur') 
+    $('.content__burger').removeClass('blur') 
+    $('.content__main_title_price').removeClass('blur') 
+    $('.content__button').removeClass('blur') 
+    $('.content__price').removeClass('blur') 
   }
   function popup_pidtv() {
     $('.content__data').removeClass('show') 
     $('.content__width').removeClass('show')
     $('.content__popup').addClass('show') 
+    $('.content__price').addClass('blur') 
   }

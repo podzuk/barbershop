@@ -15,7 +15,7 @@
 <body>
     <div class="content">
         <img class="content__burger" src="../images/burger.svg" alt="">
-        <h1 onclick="add_menu()" class="content__main_title">ціни</h1>
+        <h1 onclick="add_menu()" class="content__main_title_price">ціни</h1>
         <div class="content__price">
             <div class="content__row">
                 <div class="content__name">Чоловіча стрижка</div>
@@ -49,7 +49,7 @@
         </div>
 
         <div class="content__width">
-            <h1 class="content__MainTitle">Оберіть барбера <img onclick="closePopup_burbers()" class="content__close" src="images/close.svg" alt=""></h1>
+            <h1 class="content__MainTitle">Оберіть барбера <img onclick="closePopup_burbers()" class="content__close" src="../images/close.svg" alt=""></h1>
             <div class="content__team">
                 <div class="content__andrii">
                     <img onclick="popup_enter()" class="content__foto" src="../images/andrii.jpg" alt="">
@@ -64,6 +64,34 @@
                     <h2 class="content__name_foto">Іван</h2>  
                 </div>
             </div>
+        </div>
+
+
+        <div class="content__data">
+            <h1><img  class="content__close" src="../images/close.svg" alt="" onclick="close_data()"></h1>
+             <div class="content__calendar">
+                 <div class="content__left">
+                     <input class="content__main_calendar" type="date" атрибуты>
+                 </div>
+                 <div class="content__right">
+                     <div class="content__header_title">Оберіть дату</div>
+                     <div class="content__enter">
+                         <input class="content__time" placeholder="Час" type="text">
+                         <input class="content__phone" placeholder="Телефон" type="text">
+                         <input class="content__firstName" placeholder="Прізвище" type="text">
+                         <input class="content__secondName" placeholder="Ім'я" type="text">
+                     </div>
+                     <div class="content__rightFooter">
+                         <button onclick="popup_pidtv()" class="content__buttonData">Записатись</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <div class="content__popup">
+            <h1><img  class="content__close" src="../images/close.svg" alt="" onclick="close_popup()"></h1>
+            <img class="content__radio" src="../images/hal.png" alt="">
+            <div class="content__popupTitle">ваш запис прийнято, </br> дякуємо</div>
         </div>
 
 </div>

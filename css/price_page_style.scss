@@ -21,7 +21,7 @@ body {
         top: 3%;
         left: 12%;
       }
-      &__main_title {
+      &__main_title_price {
         position: absolute;
         width: 100%;
         padding-top: 4%;
@@ -173,6 +173,162 @@ body {
             margin-top: 10px;
         }
       }
+      &__data{
+        position: absolute;
+        margin: auto;
+        top: 19%;
+        left: 0;
+        right: 0;
+        width: 75%; 
+        transition: 200ms ease-in-out;;
+        background-color: #333943;  
+        transform: scale(0);
+    }
+    &__calendar{
+      height: 65vh;
+      display: flex;
+      flex-direction: row;
+  }
+  &__left{
+      position: relative;
+      width: 45%;
+      height: 100%;
+  }
+  &__right{
+      position: relative;
+      width: 55%;
+      height: 100%;
+    
+  }
+  &__main_calendar{
+      position: absolute;
+      right: 30%;
+      top: 15%;
+  }
+  &__enter{
+      height: 60%;
+      position: relative;
+      box-sizing: border-box;
+  }
+  &__time{ 
+      position: absolute;
+      left: 0;
+      top: 7vh;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      color: white;
+      font-size: 14px;
+      font-family: Open Sans;
+      font-style: oblique;
+  }
+  &__phone{ 
+      position: absolute;
+      right: 3vw;
+      top: 7vh;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      color: white;
+      font-size: 14px;
+      font-family: Open Sans;
+      font-style: oblique;
+  }
+  &__firstName{
+      position: absolute;
+      left: 0;
+      bottom: 7vh;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      color: white;
+      font-size: 14px;
+      font-family: Open Sans;
+      font-style: oblique;
+  }
+  &__secondName{
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      color: white;
+      font-size: 14px;
+      font-family: Open Sans;
+      font-style: oblique;
+      position: absolute;
+      right: 3vw;
+      bottom: 7vh;
+  }
+  &__rightFooter{    
+      position: relative;
+  }
+  &__header_title{
+      font-family: Didact Gothic;
+      font-weight: 100;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: white; 
+      margin-top: 10%;
+  }
+  &__buttonData{
+          position: absolute;
+          left: 0;
+          top: 0;
+          border: 1px solid white;
+          border-radius: 50px;
+          outline:  none;
+          width: 210px;
+          height: 50px;
+          background-color: transparent;
+          font-family: Didact Gothic;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 30px;
+          color: white;  
+  }
+  &__popup{
+    width: 40%;
+    height: 35%;
+    background-color: #333943;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+}
+&__popupTitle{
+    width: 100%;
+    height: 80%;
+    margin-top: 7vh;
+    text-align: center;
+    font-family: Didact Gothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;  
+    text-transform: uppercase;
+}
+&__radio{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom:6vh;
+}
+@media screen and(max-width: 1400px) {
+    &__radio{
+        bottom:6vh;
+    }
+    &__popup{
+        width: 45%;
+        height: 45%;
+    }
+  }
 
 }
 
@@ -209,5 +365,10 @@ body {
 }
 .show{
   transform: scale(1);
+}
+
+.blur{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
