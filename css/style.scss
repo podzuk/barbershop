@@ -94,6 +94,7 @@ body{
         font-style: normal;
         font-weight: 500;
         font-size: 25px;   
+        text-decoration: none; 
     }
     &__line{
         position: absolute;
@@ -105,6 +106,38 @@ body{
         top: 21vh;
         background-color: white;
     }
+    &__burger{
+       position: absolute;
+       top: 9%;
+       opacity: 0;
+    }
+    &__items-none{
+        opacity: 1;
+    }
+  
+    @media screen and(max-width: 600px) {
+        &__line{
+        display: none;
+        }
+        &__menu_items{
+          display: none;  
+        }
+        &__facebook{
+            display: none;
+        }
+        &__instagram{
+            display: none;
+        }
+        &__burger{
+            opacity: 1;
+         }
+         &__items-none{
+            opacity: 0;
+        }
+        &__footer{
+           height: 10vh;
+        }     
+      }
     &__logo{
         position: absolute;
         margin: auto;
@@ -155,6 +188,7 @@ body{
         flex-direction: row;
         justify-content: center;
         bottom: 5vh;
+       
     }    
     &__items{
         margin-left: 40px;
@@ -164,6 +198,7 @@ body{
         font-weight: normal;
         font-size: 16px;
         color: white;
+        text-align: center;
     }
 
     &__data{
@@ -350,17 +385,61 @@ color: white;
     border-bottom: 1px solid white;
 
 }
+.burger__menu {
+    position: absolute;
+    width: 12%;
+    border-left: 1px solid grey;
+    bottom: 15%;
+    left: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+    transform: scale(0);
+  }
+  .content__menu_items1 {
+    padding-top: 10%;
+    color: white;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: Didact Gothic;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media screen and(max-width: 600px) {
+    .burger__menu {
+        position: absolute;
+        width: 100%;
+        border-left: 1px solid grey;
+        bottom: 15%;
+        left: 3%;
+        padding-top: 0.5%;
+        padding-bottom: 2%;
+        transform: scale(0);  
+      }   
+  }
+
 a{
 text-decoration: none; 
 }
+
 .slick-dots{
 display: none;
 }
 
   .show{
+      transition: 1s;
     transform: scale(1);
   }
-
+ 
+  .blue{
+      background-image: none;
+      background-color: #07101d;
+  }
+ .hiden{
+    transform: scale(0);
+ }
 
   
 

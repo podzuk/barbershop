@@ -41,6 +41,14 @@ $(".content__team").slick({
             $('#menu').animate({width: 'hide'}, 400); 
         } 
   }
+  function add_menu1() {
+    $('.burger__menu').addClass('show') 
+    $('.lol').addClass('blue')
+    $('.content__logo').addClass('hiden') 
+    $('.content__burger').addClass('hiden') 
+    $('.content__button').addClass('hiden') 
+    $('.content__footer').addClass('hiden') 
+  }
 
   
   function popup_burbers() {

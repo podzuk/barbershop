@@ -80,6 +80,30 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .content__main_title {
+    padding-top: 12%;
+  }
+  .content__foto {
+    margin-top: 27%;
+    width: 100%;
+  }
+  .content__foto_center {
+    width: 100%;
+  }
+  .content__title {
+    margin-top: 4%;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .burger__menu {
   position: absolute;
   width: 11%;
