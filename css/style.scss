@@ -231,8 +231,16 @@ body{
     }
     &__main_calendar{
         position: absolute;
-        right: 30%;
-        top: 15%;
+        left: 5%;
+        top: 20%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: Open Sans;
+        font-style: oblique;
     }
     &__enter{
         height: 60%;
