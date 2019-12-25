@@ -1,9 +1,18 @@
 $(".content__team").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    dots: true,
-    autoplaySpeed: 2000
+    autoplay: false,
+    dots: false,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        
+      }
+    }
+  ]
   });
 
   $(".popup").slick({
@@ -14,6 +23,10 @@ $(".content__team").slick({
     autoplaySpeed: 2000
   });
 
+  //if ($('.content__width').css('width') <= '700px'){
+  // $('.content__name').css({'color' : 'rgb(255, 0, 0)'});
+  //}
+  
 
   $('.content__slider').slick({
     slidesToShow: 1,
@@ -73,10 +86,23 @@ $(".content__team").slick({
     $('.content__main_title_price').removeClass('blur') 
     $('.content__button').removeClass('blur') 
   }
-  function popup_enter(){
+
+  function popup_enter_andrii(){
     $('.content__width').removeClass('show')
     $('.content__data').addClass('show') 
+    $('.content__barbersName').val('Андрій');
   }
+  function popup_enter_tania(){
+    $('.content__width').removeClass('show')
+    $('.content__data').addClass('show') 
+    $('.content__barbersName').val('Таня');
+  }
+  function popup_enter_ivan(){
+    $('.content__width').removeClass('show')
+    $('.content__data').addClass('show') 
+    $('.content__barbersName').val('Іван');
+  }
+
   function close_data() {
     $('.content__data').removeClass('show') 
     $('.content__menu').removeClass('blur') 
@@ -87,6 +113,7 @@ $(".content__team").slick({
     $('.content__burger').removeClass('blur') 
     $('.content__main_title_price').removeClass('blur') 
     $('.content__button').removeClass('blur') 
+
   }
   function close_popup() {
     $('.content__data').removeClass('show') 
@@ -102,9 +129,17 @@ $(".content__team").slick({
     $('.content__button').removeClass('blur') 
     $('.content__price').removeClass('blur') 
   }
+
+
+ 
   function popup_pidtv() {
-    $('.content__data').removeClass('show') 
-    $('.content__width').removeClass('show')
-    $('.content__popup').addClass('show') 
-    $('.content__price').addClass('blur') 
+    if($('.content__phone').val()!=="" && $('.content__time').val()!=="" && $('.content__date').val()!=="" && $('.content__firstName').val()!=="" && $('.content__secondName').val()!==""){
+      $('.content__data').removeClass('show') 
+      $('.content__width').removeClass('show')
+      $('.content__popup').addClass('show') 
+      $('.content__price').addClass('blur') 
+    } else{
+      alert("Для успішного завершення запису, заповніть будь-ласка усі поля!")
+    }
   }
+ 

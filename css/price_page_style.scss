@@ -201,9 +201,17 @@ body {
     
   }
   &__main_calendar{
-      position: absolute;
-      right: 30%;
-      top: 15%;
+      position: absolute; 
+      left: 5%;
+      top: 20%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      color: white;
+      font-size: 14px;
+      font-family: Open Sans;
+      font-style: oblique;
   }
   &__enter{
       height: 60%;
@@ -289,6 +297,10 @@ body {
           font-size: 30px;
           color: white;  
   }
+  &__barbersName{
+    position: absolute;
+   display: none;
+}
   &__popup{
     width: 40%;
     height: 35%;

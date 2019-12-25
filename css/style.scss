@@ -24,6 +24,7 @@ body{
     left: 0;
     right: 0;
     width: 75%; 
+    height: 65vh;
     transition: 200ms ease-in-out;;
     background-color: #333943;  
     transform: scale(0);
@@ -45,7 +46,7 @@ body{
         color: white;
     }
     &__foto {
-        margin-top: 50px;
+        margin-top: 40%;
         margin-left: auto;
         margin-right: auto;
         width: 200px;
@@ -58,6 +59,27 @@ body{
       &__team{
         margin-bottom: 6%;
     }
+    @media screen and(max-width: 600px) {
+        &__width{
+        top: 0;
+        bottom: 0;
+        width: 100%; 
+        height: 100%;
+        }
+      }
+      @media screen and(max-width: 1000px) {
+        &__width{
+        top: 0;
+        bottom: 0;
+        width: 100%; 
+        height: 100%;
+        background-image: url(../images/wp.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-attachment: fixed;    
+        background-size: cover;
+        }
+      }
 
 
     @media screen and(max-width: 1400px) {
@@ -65,7 +87,7 @@ body{
             margin-bottom: 2%;
         }
         &__foto{
-            margin-top: 10px;
+            margin-top: 10%;
         }
       }
 
@@ -137,6 +159,11 @@ body{
         &__footer{
            height: 10vh;
         }     
+      }
+      @media screen and(max-width: 1200px) {
+        &__line{
+        display: none;
+        }   
       }
     &__logo{
         position: absolute;
@@ -241,6 +268,10 @@ body{
         font-size: 14px;
         font-family: Open Sans;
         font-style: oblique;
+    }
+    &__barbersName{
+        position: absolute;
+       display: none;
     }
     &__enter{
         height: 60%;
@@ -367,6 +398,16 @@ body{
         }
       }
 }
+@media screen and(max-width: 600px) {
+    .content{
+        width: 100%; 
+    }
+}
+@media screen and(max-width: 1000px) {
+    .content{
+        width: 100%;
+    }
+}
 .content__time::placeholder{
 color: white;
 }
@@ -428,7 +469,7 @@ color: white;
       }   
   }
 
-a{
+a:hover{
 text-decoration: none; 
 }
 
@@ -437,7 +478,7 @@ display: none;
 }
 
   .show{
-      transition: 1s;
+      transition: .5s;
     transform: scale(1);
   }
  
@@ -449,7 +490,4 @@ display: none;
     transform: scale(0);
  }
 
-  
 
-
-  

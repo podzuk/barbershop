@@ -28,6 +28,7 @@ body {
   left: 0;
   right: 0;
   width: 75%;
+  height: 65vh;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   background-color: #333943;
@@ -53,7 +54,7 @@ body {
 }
 
 .content__foto {
-  margin-top: 50px;
+  margin-top: 40%;
   margin-left: auto;
   margin-right: auto;
   width: 200px;
@@ -67,12 +68,35 @@ body {
   margin-bottom: 6%;
 }
 
+@media screen and (max-width: 600px) {
+  .content__width {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content__width {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/wp.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .content__team {
     margin-bottom: 2%;
   }
   .content__foto {
-    margin-top: 10px;
+    margin-top: 10%;
   }
 }
 
@@ -156,6 +180,12 @@ body {
   }
   .content__footer {
     height: 10vh;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content__line {
+    display: none;
   }
 }
 
@@ -282,6 +312,11 @@ body {
   font-size: 14px;
   font-family: Open Sans;
   font-style: oblique;
+}
+
+.content__barbersName {
+  position: absolute;
+  display: none;
 }
 
 .content__enter {
@@ -422,6 +457,18 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    width: 100%;
+  }
+}
+
 .content__time::-webkit-input-placeholder {
   color: white;
 }
@@ -539,7 +586,7 @@ body {
   }
 }
 
-a {
+a:hover {
   text-decoration: none;
 }
 
@@ -548,8 +595,8 @@ a {
 }
 
 .show {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   -webkit-transform: scale(1);
           transform: scale(1);
 }

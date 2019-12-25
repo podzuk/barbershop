@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
     <title>RAZOR</title>
 </head>
 <body class="lol">     
@@ -48,14 +49,14 @@
         <h1 class="content__main_title">Оберіть барбера <img onclick="closePopup_burbers()" class="content__close" src="images/close.svg" alt=""></h1>
         <div class="content__team">
             <div class="content__andrii">
-                <img onclick="popup_enter()" class="content__foto" src="images/andrii.jpg" alt="">
+                <img onclick="popup_enter_andrii()" class="content__foto" src="images/andrii.jpg" alt="">
                 <h2 class="content__name">Андрій</h2>
             </div>
-            <div onclick="popup_enter()" class="content__tania">
+            <div onclick="popup_enter_tania()" class="content__tania">
                 <img class="content__foto" src="images/tania.jpg" alt="">
                 <h2 class="content__name">Таня</h2>
             </div>
-            <div onclick="popup_enter()" class="content__ivan" class="content__foto">
+            <div onclick="popup_enter_ivan()" class="content__ivan" class="content__foto">
                 <img class="content__foto"  src="images/ivan.jpg" alt="">
                 <h2 class="content__name">Іван</h2>  
             </div>
@@ -63,18 +64,19 @@
     </div>
 
     <div class="content__data">
-       <h1><img  class="content__close" src="images/close.svg" alt="" onclick="close_data()"></h1>
+
         <div class="content__calendar">
             <div class="content__left" method="post">
                 <input class="content__main_calendar" type="date" name="date" атрибуты>
             </div>
             <div class="content__right">
-                <div class="content__header_title">Оберіть дату</div>
+                <div class="content__header_title">Оберіть дату <img  class="content__close" src="images/close.svg" alt="" onclick="close_data()"></div>
                 <div class="content__enter">
-                    <input class="content__time" placeholder="Час" type="text" name="time">
-                    <input class="content__phone" placeholder="Телефон" type="text" name="phone">
-                    <input class="content__firstName" placeholder="Прізвище" type="text" name="firstName">
-                    <input class="content__secondName" placeholder="Ім'я" type="text" name="secondName">
+                    <input class="content__barbersName" placeholder="Ім'я барбера" type="text" name="name" value="">
+                    <input class="content__time" placeholder="Час" type="text" name="time" required>
+                    <input class="content__phone" placeholder="Телефон" type="text" name="phone" required>
+                    <input class="content__firstName" placeholder="Прізвище" type="text" name="firstName" required>
+                    <input class="content__secondName" placeholder="Ім'я" type="text" name="secondName" required> 
                 </div>
                 <div class="content__rightFooter">
                     <button onclick="popup_pidtv()" class="content__buttonData">Записатись</button>
@@ -88,10 +90,6 @@
         <img class="content__radio" src="images/hal.png" alt="">
         <div class="content__popupTitle">ваш запис прийнято, </br> дякуємо</div>
     </div>
-
-    
-
-
    </div>
 
 
@@ -100,11 +98,8 @@
   
    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-   <script src="script.js"></script>
-   <script src="/path/to/masonry.pkgd.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
