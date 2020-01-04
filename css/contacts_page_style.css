@@ -31,10 +31,10 @@ body {
   width: 35px;
   height: 35px;
   position: absolute;
+  display: none;
   top: 3%;
   left: 16%;
   z-index: 30;
-  display: none;
 }
 
 .content__main_title {
@@ -92,6 +92,7 @@ body {
   font-size: 28px;
   line-height: 41px;
   color: #FFFFFF;
+  display: none;
 }
 
 .content__text {
