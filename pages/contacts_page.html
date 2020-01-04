@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="../css/contacts_page_style.css">
     <title>ДЕ НАС ЗНАЙТИ</title>
 </head>
-<body>
+<body class="main">
     <div id="app">
         <div class="content">
-            <img  class="content__burger" src="../images/burger.svg"  alt="">
-            <h1 onclick="add_menu()" class="content__main_title">де нас знайти</h1>
+            <img onclick="add_menu()" class="content__burger" src="../images/burger.svg"  alt="">
+            <img onclick="add_menu_mobi()" class="content__burger_mobi" src="../images/burger.svg" alt="ds">
+            <h1 class="content__main_title">де нас знайти</h1>
             <div class="content__block">
                 <divi id="map" class="content__map"></divi>
                 <div class="content__title">
@@ -54,7 +55,12 @@
                 { saturation: -90 },
                 { lightness: 50 }]},];
         var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: coordinates,});
-        var marker = new google.maps.Marker({position: coordinates, map: map, icon: 'pin.png',});}
+        var marker = new google.maps.Marker({
+              position: {lat: 49.560727, lng: 25.616000},
+              map: map,
+              title: 'RAZOR',
+          });
+        }
     </script>
     <script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhYg7JehYdlRWBjPP6jLrMLYmLflWn9aM&callback=initMap" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
