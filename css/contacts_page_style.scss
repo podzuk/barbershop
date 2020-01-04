@@ -29,6 +29,7 @@ body {
       top: 3%;
       left: 16%;
       z-index: 30;
+      display: none;
   
     }
     &__main_title {
@@ -156,7 +157,7 @@ body {
         left: 7%;
       }
   }
-  @media screen and(max-width: 600px) {
+  @media screen and(max-width: 700px) {
     &__block{
       width: 100%;   
    }
@@ -164,7 +165,7 @@ body {
   
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 700px) {
   .content {
     width: 100%; 
     height: 100vh;
@@ -199,7 +200,7 @@ p{
     font-size: 20px;
     text-align: center;
   }
-  @media screen and(max-width: 600px) {
+  @media screen and(max-width: 700px) {
     .burger__menu {
         position: absolute;
         width: 100%;
