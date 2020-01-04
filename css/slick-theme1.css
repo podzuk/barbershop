@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+
  
 }   
 .slick-prev:hover,
@@ -50,6 +51,7 @@
     color: transparent;
     outline: none;
     background: transparent;
+display: none;
   
 }
 .slick-prev:hover:before,

@@ -12,10 +12,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>ПРО НАС</title>
 </head>
-<body>
+<body class="main">
+    <div id="app">
     <div class="content">
-        <img class="content__burger" src="../images/burger.svg" alt="">
-        <h1 onclick="add_menu()" class="content__main_title">наша команда</h1>
+        <img onclick="add_menu()" class="content__burger" src="../images/burger.svg" alt="ds">
+        <img onclick="add_menu_mobi()" class="content__burger_mobi" src="../images/burger.svg" alt="ds">
+        <h1 class="content__main_title">наша команда</h1>
         <div class="content__foto_center">
             <img class="content__foto" src="../images/team.jpg" alt="">
         </div>
@@ -23,21 +25,12 @@
             Барбери “razor” - це справжні майстри своєї справи, не тільки тому що у них за плечима гарний досвід, а також і просто тому що вони дуже і дуже люблять свою справу. Наші барбери знають толк і дадуть вам найрізноманітніші поради по догляду за собою, виробленню та підтриманню свого стилю, і просто подарують чарівні посмішки. Ви можете вибрати барбера за Вашим бажанням, кожен з нас буде радий запросити Вас в своє зручне крісло і показати всю майстерність.
         </div>
     </div>
-
-        
-    <div id="menu" class="burger__menu">
-        <a href="../index.html"><div class="content__menu_items">головна</div></a>
-        <a href="../pages/team_page.html"><div class="content__menu_items">про нас</div></a>
-        <a href="../pages/services_page.html"><div class="content__menu_items">послуги</div></a>
-        <a href="../pages/gallery_page.html"><div class="content__menu_items">гелерея</div></a>
-        <a href="../pages/barbers_page.html"><div class="content__menu_items">барбери</div></a>
-        <a href="../pages/price_page.html"><div class="content__menu_items">ціни</div></a>
-        <a href="../pages/contacts_page.html"><div class="content__menu_items">контакти</div></a>
+    <burger__menuvue></burger__menuvue> 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="../script.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
 </body>
 </html>

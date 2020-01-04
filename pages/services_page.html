@@ -12,10 +12,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>ПОСЛУГИ</title>
 </head>
-<body>
+<body class="main">
+<div id="app">
     <div class="content">
-        <img class="content__burger" src="../images/burger.svg" alt="">
-        <h1 onclick="add_menu()" class="content__main_title">послуги</h1>
+        <img onclick="add_menu()" class="content__burger" src="../images/burger.svg" alt="">
+        <img onclick="add_menu_mobi()" class="content__burger_mobi" src="../images/burger.svg" alt="ds">
+        <h1 class="content__main_title">послуги</h1>
         <div class="content__width">
         <div class="content__team">
             <div class="content__andrii">
@@ -35,8 +37,7 @@
             </div>
         </div>
     </div>
-        
-    </div>
+    </div>  
     <div id="menu" class="burger__menu">
         <a href="../index.html"><div class="content__menu_items">головна</div></a>
         <a href="../pages/team_page.html"><div class="content__menu_items">про нас</div></a>
@@ -45,11 +46,10 @@
         <a href="../pages/barbers_page.html"><div class="content__menu_items">барбери</div></a>
         <a href="../pages/price_page.html"><div class="content__menu_items">ціни</div></a>
         <a href="../pages/contacts_page.html"><div class="content__menu_items">контакти</div></a>
-    </div>
+        </div>
+</div>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="../script.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
 </body>
 </html>
